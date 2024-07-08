@@ -1,0 +1,142 @@
+.title {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 26px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#showTaskInput,
+.addTask {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #80af81;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#showTaskInput:hover,
+.addTask:hover {
+  background-color: #92c093;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#showTaskInput:focus,
+.addTask:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.newTaskInput,
+.editTask {
+  width: 200px;
+  height: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.newTaskInput:focus,
+.editTask:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.newTaskInput::placeholder {
+  color: #aaa;
+}
+
+#list-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: aliceblue;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 7px;
+  width: auto;
+  align-self: center;
+  justify-content: end;
+  margin-left: 10px;
+}
+
+.deleteIcon,
+.editIcon {
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #80af81;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.editIcon:hover,
+.deleteIcon:hover {
+  background-color: #92c093;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.editIcon:focus,
+.deleteIcon:hover {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[type='checkbox'] {
+  align-self: center;
+  content: '✓';
+  background-color: #80af81;
+  border-color: #80af81;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 80px;
+}
+.editTask {
+  width: 60%;
+}
+
+@media (max-width: 620px) {
+  .deleteIcon,
+  .editIcon {
+    width: 15px;
+    padding: 5px 8px;
+  }
+  .addTask {
+    margin-top: 10px;
+  }
+}
