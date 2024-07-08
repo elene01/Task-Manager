@@ -1,7 +1,6 @@
 import { editTask, deleteTask, toggleCompleteTask } from './modify-tasks.js'
 import { getTasks } from './helper-functions.js'
 
-
 const tasks = getTasks()
 
 export function renderTasks() {
@@ -17,11 +16,11 @@ export function renderTasks() {
 
     const editIcon = document.createElement('img')
     editIcon.className = 'editIcon'
-    editIcon.src = '../assets/edit.svg'
+    editIcon.src = '../assets/edit.png'
 
     const deleteIcon = document.createElement('img')
     deleteIcon.className = 'deleteIcon'
-    deleteIcon.src = '../assets/delete.svg'
+    deleteIcon.src = '../assets/delete.png'
 
     const checkbox = document.createElement('input')
     checkbox.type = 'checkbox'

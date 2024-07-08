@@ -31,7 +31,6 @@ export function deleteTask(task, template) {
 }
 
 export function toggleCompleteTask(id) {
-  console.log(id)
   const tasks = getTasks()
   const task = tasks.find((task) => task.id == id)
   if (task) {
