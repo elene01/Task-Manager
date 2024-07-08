@@ -1,6 +1,11 @@
 import { editTask, deleteTask, toggleCompleteTask } from './modify-tasks.js'
 import { getTasks } from './helper-functions.js'
 
+const editIconSrc =
+  'https://raw.githubusercontent.com/elene01/Task-Manager/main/assets/edit.png'
+const deleteIconSrc =
+  'https://raw.githubusercontent.com/elene01/Task-Manager/main/assets/delete.png'
+
 const tasks = getTasks()
 
 export function renderTasks() {
@@ -16,11 +21,13 @@ export function renderTasks() {
 
     const editIcon = document.createElement('img')
     editIcon.className = 'editIcon'
-    editIcon.src = '../assets/edit.png'
+    editIcon.src = editIconSrc
+    editIcon.alt = 'Edit icon'
 
     const deleteIcon = document.createElement('img')
     deleteIcon.className = 'deleteIcon'
-    deleteIcon.src = '../assets/delete.png'
+    deleteIcon.src = deleteIconSrc
+    deleteIcon.alt = 'Delete icon'
 
     const checkbox = document.createElement('input')
     checkbox.type = 'checkbox'
